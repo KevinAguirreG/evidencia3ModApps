@@ -1,0 +1,22 @@
+.login-header {
+	background-image: url(../images/login-banner.png);
+	background-size: cover;
+}
+
+.login-header {
+	h4, h6 {
+		color: $main;
+	}
+}
+
+.login-floating-icon {
+	position: absolute;
+	top: 85px;
+	left: 20px;
+	border-radius: 50%;
+	background-color: $gray-200;
+}
+
+.login-body {
+	background-color: $bg-primary;
+}

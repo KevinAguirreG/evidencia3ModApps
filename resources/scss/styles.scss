@@ -1,0 +1,73 @@
+.search-icon {
+	left: 84px!important;
+}
+
+.icon-edit {
+	color: $main;
+}
+
+.icon-delete {
+	color: $danger;
+}
+
+.button-add, .paginate_button .active .page-link {
+	background-color: $main!important;
+	color: $white;
+	&:hover {
+		color: $white
+	}
+}
+
+.table {
+	thead {
+		background-color: $table-head-bg;
+		color: $white;
+	}
+	tbody tr:hover td {
+		background-color: $table-head-bg!important;
+		color: $table-hover-color!important;
+	}
+}
+
+.dataTables_wrapper {
+	overflow-x: auto;
+	background-color: $white;
+	padding: 1.5rem !important;
+}
+
+.btn-primary {
+	background-color: $main;
+	color: $white!important;
+}
+
+.ui-front {
+	z-index: 9999!important;
+}
+
+.dataTables_scrollHeadInner, table.dataTable {
+	width: 100%!important;
+}
+
+.dataTable tbody button.btn {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/*.dtAdvancedFilters {
+	background-color: #{$main}80;
+	color: $white!important;
+}*/
+
+div.dataTables_wrapper div.dataTables_filter {
+	input {
+		width: 100%!important;
+
+		&[type=search] {
+			width: 80%!important;
+		}
+	}
+
+	label {
+		margin: 0!important;
+	}
+}

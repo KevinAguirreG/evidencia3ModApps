@@ -1,0 +1,151 @@
+:root{
+
+			/* GENERALES */
+			/* Header */
+			--general-header-background-color: #ffffff;
+			--general-header-font-color: #74788d;
+			--general-header-font: 'Times New Roman', Times, serif;
+
+		
+			/* Menu */
+			--general-menu-background-color: #005691; 
+			--general-menu-font-color: #a6b0cf;
+			--general-menu-font: Arial, Helvetica, sans-serif;
+			--general-active-menu-font-color: #ffffff;
+			--general-menu-icons: inline-block;
+		
+			/* Body */
+			--general-body-background-color: #f8f8fb;
+			--general-body-font-color: #495057;
+			--general-body-font: Arial, Helvetica, sans-serif;
+
+			/* Footer */
+			--general-footer-background-color: #f2f2f5;
+			--general-footer-font-color: #74788d;
+			--general-footer-font: 'Courier New', Courier, monospace;
+
+			/* DATATABLES */
+			/* Header */
+			--datatables-header-background-color: 100, 100, 100;
+			--datatables-header-font-color: #f8f8fb;
+			--datatables-header-hover-font-color: #000000;
+
+			/* Boton Add */
+			--datatables-add-background-color: #2d5da0;
+			--datatables-add-font-color: #f8f8fb;
+
+			/* Boton Edit */
+			--datatables-edit-font-color: #000000;
+
+			/* Boton Delete */
+			--datatables-delete-font-color: #000000;
+
+		}
+		
+		
+		/* General */
+
+
+		#logo{
+			background-image: url('../images/logos/hsAKSoEkkSiRnhW54ZdqeWl6M0hurvEYsq7JGGqa.png') !important;
+			background-repeat: no-repeat !important;
+			background-position: center !important; /* Center the image */
+			background-size: contain  !important; /* Resize the background image to cover the entire container */
+			height: 80px;
+		}
+		
+		/* Header */
+		#page-topbar{
+			background-color: var(--general-header-background-color);
+			color: var(--general-header-font-color);
+			font-family: var(--bs-body-font-family);
+
+		}
+		
+		/* Menu */
+		body[data-sidebar=dark] .vertical-menu,
+		body[data-sidebar=dark] .navbar-brand-box,
+		body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu > ul > li:hover > a,
+		body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu > ul ul {
+			background-color:  var(--general-menu-background-color);
+			font-family:  var(--general-menu-font);
+		}
+		
+		body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a,
+		body[data-sidebar=dark] #sidebar-menu ul li a i, 
+		body[data-sidebar=dark] #sidebar-menu ul li a
+		{
+			color: var(--general-menu-font-color);
+		}
+
+		
+		/* Menu item active */
+		body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a:hover,
+		body[data-sidebar=dark] #sidebar-menu ul li a:hover i,
+		body[data-sidebar=dark] #sidebar-menu ul li a:hover,
+		body[data-sidebar=dark] .mm-active > a,
+		body[data-sidebar=dark] .mm-active > a i,
+		body[data-sidebar=dark] .mm-active .active,
+		body[data-sidebar=dark] .mm-active .active i
+		{
+			color: var(--general-active-menu-font-color) !important;
+		}
+
+		
+		body[data-sidebar=dark] #sidebar-menu ul li a i {
+			display: var(--general-menu-icons);
+		}
+		
+		/* Body */
+		body{
+			background-color: var(--general-body-background-color);
+		}
+		
+		.page-content,
+		h1, h2 ,h3,
+		h4, h5, h6{
+			color: var(--general-body-font-color);
+			font-family:  var(--general-body-font);
+		}
+		
+		/* Footer */
+		.footer {
+			background-color: var(--general-footer-background-color);
+			color: var(--general-footer-font-color);
+			font-family:  var(--general-footer-font);
+		}
+		
+		/* DATATABLES */
+		.table thead {
+			background-color: rgb(var(--datatables-header-background-color));
+			color: var(--datatables-header-font-color);
+		}
+
+		.table tbody tr:hover td {
+			background-color: rgba(var(--datatables-header-background-color), 0.5) !important;
+			color: var(--datatables-header-hover-font-color) !important;
+		}
+
+		.table tbody tr.odd {
+			background-color: rgba(var(--datatables-header-background-color), 0.20) !important;
+			color: var(--datatables-header-odd-font-color) !important;
+		}
+
+		.button-add, .paginate-button.active.page-link, .page-item.active .page-link {
+			background-color: var(--datatables-add-background-color) !important;
+			color: var(--datatables-add-font-color) !important;
+		}
+
+		.icon-edit{
+			color: var(--datatables-edit-font-color);
+		}
+
+		.icon-delete{
+			color: var(--datatables-delete-font-color);
+		}
+
+		.dt-button-collection .buttons-columnVisibility.active{
+			background-color: rgba(var(--datatables-header-background-color), 0.50) !important;
+			color: var(--datatables-header-font-color) !important;
+		}
+		
